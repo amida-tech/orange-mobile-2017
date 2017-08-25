@@ -43,14 +43,16 @@ class Auth extends React.Component {
             password: 'testtest',
           })
         })
-        .then((response) => {
-          console.log(response);
-          return response;
+        .then((response) => response.json())
+        .then((responseJSON) => {
+          this.setState({ auth_token: responseJSON.access_token});
+          console.log(responseJSON);
+          return responseJSON;
         })
         .catch((error) => {
           console.error(error);
         });
-      this.setState({ auth_token: response.toString()});
+      
       
     }
   
