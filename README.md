@@ -1,14 +1,15 @@
 
 
 Installation  & Setup
----
-Install node, Python2 (Windows Only), JDK8, Android Studio, Xcode
+===
+Install node, Python2 (Windows Only), JDK8, Android Studio and Xcode
 
 ```
 npm install -g react-native-cli
 git clone https://github.com/amida-tech/orange-mobile.git
 cd orange-mobile
-npm install```
+npm install
+```
 
 
 Running the application
