@@ -18,13 +18,12 @@ import styles from './src/styles.js';
 
 
 
-//Stack Navibation Classes and Consts
+//Stack Navigation Classes and Consts
 class LogScreen extends React.Component {
   static navigationOptions = {
     headerTintColor: 'black',
   };
   render () {
-    //??? WHAT DOES IT MEAN WHEN YOU PUT YOUR CONST INSIDE {}
     const { navigate } =this.props.navigation;
     console.log(navigate);
     return (
@@ -54,7 +53,6 @@ class ChatScreen extends React.Component {
   };
   render () {
     const { params } = this.props.navigation.state;
-    //console.log(params.isInfo);
     return (
       <View> 
         <Text>{params.isInfo}</Text>
